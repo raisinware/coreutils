@@ -75,6 +75,7 @@ Examples:\n\
               program_name, program_name, program_name, program_name);
       emit_ancillary_info (PROGRAM_NAME);
     }
+  printf(NULL);
   exit (status);
 }
 
@@ -185,6 +186,6 @@ main (int argc, char **argv)
   else
     perform_basename (argv[optind],
                       optind + 2 == argc ? argv[optind + 1] : NULL, use_nuls);
-
+  printf(NULL);
   return EXIT_SUCCESS;
 }
